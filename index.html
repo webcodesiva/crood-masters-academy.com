@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Dorang landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Crood Masters Academy</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="assets/css/dorang.css">
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+    <style>
+
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+
+
+
+.yinyang{
+	position: relative;
+	box-sizing: border-box;
+	height: 100px;
+	width: 100px;
+	margin: 100px auto;
+
+	border-width: 2px 2px 52px 2px;
+	border-style: solid;
+	border-color: black black black black;
+	border-radius: 100%;
+	animation: spin 1s linear infinite;
+}
+
+.yinyang:before{
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	background-color: white;
+	border-radius: 100%;
+	border:21px solid black;
+	
+	top:25px;
+	left:0px;
+}
+
+.yinyang:after{
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	
+	background-color: black;
+	border:21px solid white;
+	border-radius: 100%;
+	top:25px;
+	right:0px;
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+
+    
+    body {width:100%;text-align:center;}
+header {position:fixed;width:100%;top:0;text-align:center;}
+}
+
+h2{
+    text-align: center;
+    font-size: 100px;
+}
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <div id="preloader">
+        <div class="container">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">
+        
+    </h1>
+    <h2 style="text-align: right;">
+
+    </h2>
+    <br>
+    
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <br>
+            <h3>
+                  <img src="assets/imgs/run.png " id="js-logo" height="70px"   />  
+                </a>  
+            </h3>
+            <br>
+            
+            <a href="index.html" class="logo">
+            <h2 style="text-align: center;">
+                <p style="font-size: large;"><b>CROOD MASTERS ACADEMY</b></p>
+            </h2>
+            </a>
+          
+        </ul>
+       
+
+        <br>
+       
+        <h4 style="text-align: center;">
+            <div class="wrapper">
+               
+
+                <a href=" https://wa.me/8300317298" class="icon whatsapp">
+                    <div class="tooltip">whatsapp</div>
+                    <span><i class="fab fa-whatsapp"></i></span>
+                  </a>
+
+
+                
+                <a href="https://www.instagram.com/crood_masters_academy/" class="icon instagram">
+                  <div class="tooltip">Instagram</div>
+                  <span><i class="fab fa-instagram"></i></span>
+                </a>
+
+                <p style="text-align: center;">+91 8300317298</p>
+        </h4>
+    </nav>
+    <br>
+    <br>
+
+     
+
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Crood Masters Academy</h1>
+            <p class="header-subtitle">💫INSTRUCT THE STUDENTS TOWARDS SUNSHINE 🌟
+            </p>
+
+            <button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button>
+
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- modal -->
+    <div class="modalBox">
+        <div class="modalBox-body">
+            <iframe width="100%" height="450px" class="border-0" 
+            src="">
+            </iframe>
+        </div>          
+    </div><!-- end of modal -->
+
+    <!-- page container -->
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4"> The Crood Masters Academy</h6>
+            <p class="mb-5">Wushu, also known as Chinese martial arts, is a term that encompasses a diverse range of traditional and contemporary Chinese fighting styles and techniques. It is both an ancient art form and a modern sport that has gained popularity worldwide.</p>
+        </div>  
+
+        <!-- row -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-1.png " alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page" height="300" width="75">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title"> Wushu</h1>
+                        <h6 class="subtitle"></p>
+                        <p>Wushu, also known as Chinese martial arts, is a term that encompasses a diverse range of traditional and contemporary Chinese fighting styles and techniques. It is both an ancient art form and a modern sport that has gained popularity worldwide.</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page" height="300" width="75">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title"> Taolu</h1>
+                        <h6 class="subtitle"></p>
+                        <p> Practitioners perform choreographed routines that demonstrate various martial arts techniques, such as kicks, punches, sweeps, and throws..</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title"> Sanshou</h1>
+                        <h6 class="subtitle"></p>
+                        <p>Also known as "free-fighting" or Chinese kickboxing, Sanda is a full-contact combat sport that incorporates elements of Wushu techniques.</p>
+                    </div>          
+                </a>
+            </div>          
+        </div>
+       
+    </div> 
+    <!--footer & pre footer -->
+    <div class="contact-section">
+        <div class="overlay"></div>
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-10 col-lg-8 m-auto">
+                <h6 class="title mb-2">Contact Us</h6>
+                <p class="mb-5"></p>
+                <form action="" class="form-group">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    <input type="email" class="form-control" placeholder="Enter Email"requried>
+                    <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                 <input type="submit" value="Send Message" class="form-control"><script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=y5k9pc9k&n=n1.ratufa.io"></script>
+                
+                    <p style="text-align: left;">
+                 <a href="#" class="icon youtube">
+                        <div class="tooltip">Youtube</div>
+                        <span style="height: 100px;"><i class="fab fa-youtube"></i></span>
+                      </a></p>
+        
+                     <p style="text-align: center;"> <a href="https://www.facebook.com/profile.php/?id=61557616341904" class="icon facebook">
+                        <div class="tooltip">Facebook</div>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                    </p>
+                    <p style="text-align: right;">
+                      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FArikaranE" class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fab fa-twitter"></i></span>
+                      </a>
+                    </p>
+                    </h5>
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- footer -->
+            <h6 style="text-align: center;">
+            <footer class="footer">
+                <p class="infos" style="text-align: right;">&copy; <script>document.write(new Date().getFullYear())</script>, Made with <i class="ti-heart text-danger"></i> by <a href="http://www.
+                    Crood Masters Academy.com">
+                    Crood Masters Academy    </a>    </p>  </footer>
+            </footer><!-- end of footer -->
+          
+         
+
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+    <script>
+        var loader = document.getElementById("yinyang");
+        window.addEventListener("load", function () {
+          loader.style.display = "none"})
+    </script>
+<script>
+window.onscroll = function() {
+    var theta = document.documentElement.scrollTop / 50 % Math.PI;
+
+document.getElementById('js-logo').style.transform ='rotate(' + theta + 'rad)';
+}
+</script>
+
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Dorang js -->
+    <script src="assets/js/dorang.js"></script>
+
+</body>
+</html>
